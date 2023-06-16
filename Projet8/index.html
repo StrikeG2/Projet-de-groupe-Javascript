@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Calculateur de Pouboire</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="wrapper">
+                <label for="montant" class="label">Montant</label>
+                <div class="saisie">
+                    <span>fcfa</span>
+                    <input type="number" min="50" max="1000000000" step="50" id="montant" class="valeur" value="50">
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="label">Pourboire</span>
+                <span id="pourboire" class="valeur">0 fcfa</span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <span class="label">Montant total</span>
+                <span id="total" class="valeur">0 fcfa</span>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <label for="pourboire" class="label">Pourcentage %</label>
+                <span id="pourcentage" class="valeur">0</span>
+            </div>
+            <input type="range" min="1" id="tip" value="15">
+            <div class="wrapper">
+                <label for="nombreGens" class="label">Nombre de personnes</label>
+                <span id="split-num" class="valeur">0</span>
+            </div>
+            <input type="range" min="1" max="15" id="nombreGens" value="1">
+        </section>
+        <section>
+            <div class="wrapper">
+                <span class="label">Pourboire par personne</span>
+                <span id="pourboire-personne" class="valeur">0 fcfa</span>
+            </div>
+        </section>
+    </div>
+    <script src="Assets/JS/app.js"></script>
+</body>
+</html>
